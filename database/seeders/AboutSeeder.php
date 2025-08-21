@@ -25,7 +25,6 @@ class AboutSeeder extends Seeder
                 "email" => "monmail@gmail.com",
                 "freelance" => "Disponible maintenant",
                 "subtext" => "Ceci est le texte en dessous de mes informations pour ajout plus de détails.",
-                "src" => "storage/about/daisuke-kambe.jpg",
             ]
         ]);
     }

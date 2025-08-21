@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string("degree");
             $table->string("email");
             $table->string("freelance");
-            $table->string("src");
             $table->longText("subtext");
             $table->timestamps();
         });
