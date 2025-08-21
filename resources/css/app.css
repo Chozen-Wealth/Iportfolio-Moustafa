@@ -1,1 +1,9 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+.video-header {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    filter: hue-rotate(180deg);
+}
