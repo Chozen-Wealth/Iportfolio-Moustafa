@@ -6,4 +6,30 @@
     aspect-ratio: 16 / 9;
     height: auto;
     filter: hue-rotate(180deg);
+    position: relative;
+}
+.skill-bars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, auto);
+    row-gap: 10px;
+    column-gap: 30px;
+}
+.hr-title {
+    width: 50px;
+    border-width: 5px;
+    border-color: rgba(52, 136, 255, 1);
+    opacity: 1;
+}
+.filter-bar {
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    padding-inline: 20px;
+    font-weight: bold;
+}
+.grille-portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }

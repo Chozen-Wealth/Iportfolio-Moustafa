@@ -1,12 +1,12 @@
-<section id="about">
+<section id="about" class="p-5">
     <div>
         <h1>About</h1>
-        <hr>
+        <hr class="hr-title">
         <p>{{ $about->subtitle }}</p>
     </div>
-    <div>
-        <div>
-            <img src="" alt="">
+    <div class="d-flex gap-3">
+        <div style="width: 500px;">
+            <img style="width: 100%; aspect-ratio: 1 / 1;" src="{{ $about->avatar->image }}" alt="">
         </div>
         <div>
             <h1>UI/UX Designer & Web Developer.</h1>
@@ -28,4 +28,4 @@
             <p>{{ $about->subtext }}</p>
         </div>
     </div>
-    </section>
+</section>

@@ -1,7 +1,7 @@
 @extends("layouts.app")
 
 @section("content")
-<div style="overflow: auto">
+<div class="d-flex flex-column" style="overflow: auto; width: calc(100vw - 250px);">
     <div class="d-flex justify-content-center align-items-center">
         <video autoplay muted loop class="video-header" src="{{ asset("storage/video/header.mp4") }}"></video>
         <div class="position-absolute text-light">

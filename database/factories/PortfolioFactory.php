@@ -17,8 +17,7 @@ class PortfolioFactory extends Factory
     public function definition(): array
     {
         return [
-            "img" => $this->faker->imageUrl(300,250),
-            "filter" => $this->faker->text(15),
+            // 
         ];
     }
 }

@@ -1,4 +1,5 @@
-<nav class="col-2 bg-dark vh-100 d-flex flex-column">
+
+<nav class="bg-dark vh-100 d-flex flex-column position-fixed" style="width: 250px; left: 0;">
     <div class="d-flex flex-column align-items-center mt-4 gap-2">
         <img height="100" width="100" class="rounded-circle border" src="{{ $about->avatar->image }}" alt="">
         <h4 class="text-light">Moustafa El Dehni</h4>
@@ -15,8 +16,8 @@
                 fill="#ffffff" viewBox="0 0 24 24" >
                 <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
                 <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22 22 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202z"></path>
-                </svg>
-            </a>
+            </svg>
+        </a>
             <a href="#" class=" rounded-circle d-flex justify-content-center align-items-center" style="height: 35px; width: 35px; background-color: rgb(60,60,60) ;">
                 <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20"  
                 fill="#ffffff" viewBox="0 0 24 24" >
@@ -29,14 +30,14 @@
                 fill="#ffffff" viewBox="0 0 24 24" >
                 <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
                 <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 2v.51l-8 6.22-8-6.22V6zM4 18V9.04l7.39 5.74c.18.14.4.21.61.21s.43-.07.61-.21L20 9.03v8.96H4Z"></path>
-                </svg>
-            </a>
-            <a href="#" class=" rounded-circle d-flex justify-content-center align-items-center" style="height: 35px; width: 35px; background-color: rgb(60,60,60) ;">
-                <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20"  
+            </svg>
+        </a>
+        <a href="#" class=" rounded-circle d-flex justify-content-center align-items-center" style="height: 35px; width: 35px; background-color: rgb(60,60,60) ;">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20"  
                 fill="#ffffff" viewBox="0 0 24 24" >
                 <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
                 <path d="M4.983 2.821a2.188 2.188 0 1 0 0 4.376 2.188 2.188 0 1 0 0-4.376M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z"></path>
-                </svg>
+            </svg>
             </a>
         </div>
     </div>
@@ -55,8 +56,8 @@
             fill="#ffffff" viewBox="0 0 24 24" >
             <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
             <path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5m0-8c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1m6-7h4c2.76 0 5 2.24 5 5H5c0-2.76 2.24-5 5-5"></path>
-            </svg>
-            About
+        </svg>
+        About
         </a>
         <a class="text-decoration-none text-light ms-4 d-flex gap-3 align-items-center" href="">
             <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
