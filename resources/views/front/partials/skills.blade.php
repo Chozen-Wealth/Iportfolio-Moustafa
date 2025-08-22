@@ -11,7 +11,6 @@
             </div>
             <div style="height: 10px; background-color: rgba(184, 213, 225, 1);">
                 <div style="width: {{ $skill->pourcentage }}%; height: 10px; background-color: rgba(52, 136, 255, 1);">
-                    
                 </div>
             </div>
         </div>

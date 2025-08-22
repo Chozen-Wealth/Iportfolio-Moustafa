@@ -2,7 +2,7 @@
     <h1>Contact</h1>
     <hr class="hr-title">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum fugiat, necessitatibus sed dolor reiciendis id cumque, in esse libero adipisci nulla! Cumque accusamus eius ipsum harum amet? Maxime fuga exercitationem magnam harum obcaecati earum nisi nam. Quos doloremque perferendis dolore!</p>
-    <div class="d-flex gap-3">
+    <div class="d-flex gap-4">
         <div class="p-3 d-flex flex-column gap-3 box-location" style="width: 40%">
             <div class="d-flex gap-2 align-items-center">
                 <div class="bulle-contact">
@@ -45,8 +45,27 @@
             </div>
         <iframe style="height: 300px; width: 100%;" src="https://www.google.com/maps?q={{ $map }}&output=embed" frameborder="0"></iframe>
         </div>
-        <div class="box-message">
-
-        </div>
+        <form class="box-message p-3 d-flex flex-column gap-3" action="{{ route("store_messages") }}" method="POST">
+            @csrf
+            <div class="d-flex gap-3">
+                <div class="d-flex flex-column gap-1 w-50">
+                    <label for="">Ton Nom</label>
+                    <input class="form-control" type="text" name="nom" id="">
+                </div>
+                <div class="d-flex flex-column gap-1 w-50">
+                    <label for="">Ton Email</label>
+                    <input class="form-control" type="email" name="email" id="">
+                </div>
+            </div>
+            <div class="d-flex flex-column gap-1">
+                <label for="">Sujet</label>
+                <input class="form-control" type="text" name="sujet" id="">
+            </div>
+            <div class="d-flex flex-column gap-1 flex-grow-1 align-items-center">
+                <label class="w-100" for="">Message</label>
+                <textarea class="form-control h-100" name="message" id=""></textarea>
+                <button class="btn btn-primary mt-3" type="submit">Envoyer Le Message</button>
+            </div>
+        </form>
     </div>
 </section>
