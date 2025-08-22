@@ -55,3 +55,21 @@
 .box-bulle {
     filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.1));
 }
+.bulle-contact {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgba(52, 137, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-location {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.box-message {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    width: 60%;
+}

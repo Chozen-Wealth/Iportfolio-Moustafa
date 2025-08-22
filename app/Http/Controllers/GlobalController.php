@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\About;
+use App\Models\Contact;
 use App\Models\Portfolio;
 use App\Models\Service;
 use App\Models\Skill;
@@ -17,6 +18,9 @@ class GlobalController extends Controller
         $portfolios = Portfolio::all();
         $services = Service::all();
         $testimonials = Testimonial::all();
-        return view("front.home", compact("about", "skills", "portfolios", "services", "testimonials"));
+        $contact = Contact::first();
+        $adresse = $contact->number." ".$contact->street." ".$contact->zip." ".$contact->city;
+        $map = urlencode($adresse);
+        return view("front.home", compact("about", "skills", "portfolios", "services", "testimonials", "contact", "map"));
     }
 }

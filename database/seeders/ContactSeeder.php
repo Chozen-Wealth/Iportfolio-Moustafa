@@ -15,7 +15,7 @@ class ContactSeeder extends Seeder
     {
         Contact::insert([
             [
-                "street" => "Rue de la minoterie",
+                "street" => "Place de la minoterie",
                 "number" => 10,
                 "city" => "Bruxelles",
                 "zip" => 1000,
