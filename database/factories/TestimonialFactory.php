@@ -17,10 +17,7 @@ class TestimonialFactory extends Factory
     public function definition(): array
     {
         return [
-            "comment" => $this->faker->paragraph("1"),
-            "img" => $this->faker->imageUrl(150,150),
-            "name" => $this->faker->name(),
-            "position" => $this->faker->text(20),
+            //
         ];
     }
 }

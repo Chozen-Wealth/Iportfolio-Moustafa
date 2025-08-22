@@ -5,8 +5,8 @@
     <div class="d-flex justify-content-center">
         <div class="d-flex gap-2 filter-bar">
             <span class="text-primary">ALL</span>
-            @foreach ($portfolios as $portfolio)
-                <span>{{ strtoupper($portfolio->filter) }}</span>
+            @foreach ($portfolios->pluck('filter')->unique() as $portfolio)
+                <span>{{ strtoupper($portfolio) }}</span>
             @endforeach
         </div>
     </div>
