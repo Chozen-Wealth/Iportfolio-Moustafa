@@ -7,7 +7,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    <div>
+    <div class="d-flex justify-content-end">
+        @include('back.partials.navbar')
         @yield("content")
     </div>
 </body>

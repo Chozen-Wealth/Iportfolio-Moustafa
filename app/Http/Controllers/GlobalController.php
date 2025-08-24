@@ -23,4 +23,8 @@ class GlobalController extends Controller
         $map = urlencode($adresse);
         return view("front.home", compact("about", "skills", "portfolios", "services", "testimonials", "contact", "map"));
     }
+    public function backnav () {
+        $about = About::first();
+        return view('layouts.back', compact("about"));
+    }
 }

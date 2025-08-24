@@ -2,9 +2,9 @@
 
 @section("content")
 <div class="d-flex flex-column" style="overflow: auto; width: calc(100vw - 250px);">
-    <div class="d-flex justify-content-center align-items-center">
+    <div class="d-flex justify-content-center align-items-center w-100">
         <video autoplay muted loop class="video-header" src="{{ asset("storage/video/header.mp4") }}"></video>
-        <div class="position-absolute text-light">
+        <div class="position-absolute">
             <h1 class="text-center">Developpeur Web FullStack</h1>
             <h1 class="text-center">& Designer</h1>
         </div>

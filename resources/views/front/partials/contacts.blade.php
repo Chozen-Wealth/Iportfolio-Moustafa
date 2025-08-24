@@ -45,7 +45,13 @@
             </div>
         <iframe style="height: 300px; width: 100%;" src="https://www.google.com/maps?q={{ $map }}&output=embed" frameborder="0"></iframe>
         </div>
-        <form class="box-message p-3 d-flex flex-column gap-3" action="{{ route("store_messages") }}" method="POST">
+        
+        <form class="box-message p-3 d-flex flex-column gap-3" action="{{ route("store_messages") }}" method="POST" id="form-message">
+            @if(session('success'))
+                <div style="background: #d4edda; color: #155724; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+                    {{ session('success') }}
+                </div>
+            @endif
             @csrf
             <div class="d-flex gap-3">
                 <div class="d-flex flex-column gap-1 w-50">
