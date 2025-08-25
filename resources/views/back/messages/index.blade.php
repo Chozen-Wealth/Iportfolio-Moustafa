@@ -2,7 +2,8 @@
 
 @section("content")
 <section id="messages" class="p-5" style="width: calc(100vw - 250px)">
-    <h1>Messages reçus :</h1>
+    <h1>Messages reçus</h1>
+    <hr class="hr-title">
     <table class="table table-striped">
         <tr class="table-dark">
             <th>Nom</th>
