@@ -9,7 +9,7 @@
         </div>
         <div class="grille-services">
             @foreach ($services as $service)
-                <div class="d-flex gap-2" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)">
+                <div class="d-flex gap-2" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); padding: 20px;">
                     <div class="bg-primary rounded-circle d-flex justify-content-center align-items-center" style="height: 40px; min-width: 40px">
                         {!! $service->icon !!}
                     </div>
