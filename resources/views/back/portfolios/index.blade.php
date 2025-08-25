@@ -2,7 +2,7 @@
 
 @section("content")
     <section id="portfolios" style="background-color: rgb(193, 211, 243);padding:50px; padding-left: 300px; min-height: 100vh;">
-        <h1>Modification du Portfolio</h1>
+        <h1>Modification de la section "Portfolio"</h1>
         <hr class="hr-title">
         <div class="d-flex justify-content-between">
             <div class="d-flex gap-2 filter-bar">
