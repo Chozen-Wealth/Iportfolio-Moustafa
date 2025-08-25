@@ -13,7 +13,7 @@
             </div>
             <input class="form-control" type="text" name="filter" id="" placeholder="Catégorie" value="{{ old("filter", $portfolio->filter) }}">
             <div>
-                <button class="btn btn-secondary" type="submit">Annuler</button>
+                <a class="btn btn-secondary" href="{{ route("index_portfolios") }}">Annuler</a>
                 <button class="btn btn-primary" type="submit">Confirmer</button>
             </div>
         </form>
