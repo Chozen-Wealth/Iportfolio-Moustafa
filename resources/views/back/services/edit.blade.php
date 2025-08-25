@@ -55,7 +55,7 @@
             <input class="form-control" type="text" name="title" id="" placeholder="Titre" value="{{ old("title", $service->title) }}">
             <input class="form-control" type="text" name="text" id="" placeholder="Texte" value="{{ old("text", $service->text) }}">
             <div>
-                <button class="btn btn-secondary" type="submit">Annuler</button>
+                <a class="btn btn-secondary" href="{{ route("index_services") }}">Annuler</a>
                 <button class="btn btn-primary" type="submit">Confirmer</button>
             </div>
         </form>
