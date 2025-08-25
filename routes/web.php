@@ -38,7 +38,7 @@ Route::delete('/back/portfolios/destroy/{id}', [PortfolioController::class, "des
 Route::get('/back/services/index', [ServiceController::class, "index"])->name("index_services");
 Route::get('/back/services/create', [ServiceController::class, "create"])->name("create_services");
 Route::post('/back/services/store', [ServiceController::class, "store"])->name("store_services");
-Route::get('/back/services/edit', [ServiceController::class, "edit"])->name("edit_services");
+Route::get('/back/services/edit/{id}', [ServiceController::class, "edit"])->name("edit_services");
 Route::put('/back/services/update/{id}', [ServiceController::class, "update"])->name("update_services");
 Route::delete('/back/services/destroy/{id}', [ServiceController::class, "destroy"])->name("destroy_services");
 
