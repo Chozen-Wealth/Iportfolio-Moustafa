@@ -14,7 +14,8 @@ class ServiceController extends Controller
         return  view("back.services.index", compact("services", "about"));
     }
     public function create () {
-        return view("back.services.create");
+        $about = About::first();
+        return view("back.services.create", compact("about"));
     }
     public function store (Request $request) {
         $service = new Service();
@@ -27,7 +28,8 @@ class ServiceController extends Controller
     }
     public function edit ($id) {
         $service = Service::where("id", $id)->first();
-        return view("back.services.edit", compact("services"));
+        $about = About::first();
+        return view("back.services.edit", compact("services", "about"));
     }
     public function update ($id, Request $request) {
         $service = Service::where("id", $id);
