@@ -1,11 +1,11 @@
 @extends("layouts.back")
 
 @section("content")
-    <section id="portfolios" style="background-color: rgb(193, 211, 243);padding:50px; padding-left: 300px; min-height: 100vh;">
+    <section id="portfolios" style="padding:50px; padding-left: 300px;">
         <h1>Modification de la section "Portfolio"</h1>
         <hr class="hr-title">
         <div class="d-flex justify-content-between">
-            <div class="d-flex gap-2 filter-bar">
+            <div class="d-flex gap-2 filter-bar" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2)">
                 <span class="text-primary">ALL</span>
                 @foreach ($portfolios->pluck('filter')->unique() as $portfolio)
                     <span>{{ strtoupper($portfolio) }}</span>
@@ -15,9 +15,9 @@
         </div>
         <div class="grille-portfolio mt-4">
             @foreach ($portfolios as $portfolio)
-                <div style="position: relative">
+                <div style="position: relative;overflow: hidden;border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);">
                     <div class="box-portfolio">
-                        <a href="{{ route("edit_portfolios", $portfolio->id) }}" class="btn-edit-portfolio">
+                        <a href="{{ route("edit_portfolios", $portfolio->id) }}" class="btn-edit-portfolio" style="border-radius: 10px 0px 0px 0px;">
                             <svg  xmlns="http://www.w3.org/2000/svg" width="35" height="35"
                             fill="currentColor" viewBox="0 0 24 24" >
                             <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
@@ -36,7 +36,7 @@
                             </button>
                         </form>
                     </div>
-                    <img style="object-fit: cover; width: 100%" src="{{ asset($portfolio->img) }}" alt="Problème d'image">
+                    <img style="object-fit: cover; width: 100%;border-radius: 10px;" src="{{ asset($portfolio->img) }}" alt="Problème d'image">
                 </div>
             @endforeach
         </div>
