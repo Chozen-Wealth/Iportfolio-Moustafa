@@ -14,10 +14,8 @@
         <h1>Modification de la section "About"</h1>
         <hr class="hr-title">
     </div>
-    <div class="mb-3" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); border-radius: 10px;padding: 10px; padding-inline: 20px;">
-        <p style="margin: 0;"><input class="form-control"  type="text" name="subtitle" id="" value="{{ old("subtitle", $about->subtitle) }}"></p>
-    </div>
     <div style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); border-radius: 10px; padding: 20px;">
+        <p style="margin: 0;"><input class="form-control mb-3"  type="text" name="subtitle" id="" value="{{ old("subtitle", $about->subtitle) }}"></p>
         <div class="d-flex gap-3">
             <div style="width: 500px;" class="d-flex flex-column gap-3">
                 <img style="width: 100%; aspect-ratio: 1 / 1;" src="{{ asset($about->avatar->image) }}" alt="">
