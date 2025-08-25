@@ -1,4 +1,4 @@
-<section id="skills" class="p-5" style="background-color: rgba(218, 235, 243, 1);">
+<section id="skills" class="p-5" style="background-color: rgb(193, 211, 243);">
     <h1>Skills</h1>
     <hr class="hr-title">
     <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed aspernatur obcaecati modi iste ullam quis fugit repudiandae nam reprehenderit quaerat repellendus eius ratione, nobis sunt nemo ipsum non nostrum molestias. Quasi, obcaecati cupiditate. Ab, architecto! Animi optio, sunt ipsum voluptate veritatis obcaecati quidem, cupiditate ipsa laborum, error nesciunt corporis ratione?</p>
@@ -9,7 +9,7 @@
                 <b>{{ $skill->skill }}</b>
                 <b>{{ $skill->pourcentage }}%</b>
             </div>
-            <div style="height: 10px; background-color: rgba(184, 213, 225, 1);">
+            <div style="height: 10px; background-color: rgb(146, 166, 201);">
                 <div style="width: {{ $skill->pourcentage }}%; height: 10px; background-color: rgba(52, 136, 255, 1);">
                 </div>
             </div>

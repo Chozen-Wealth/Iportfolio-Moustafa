@@ -1,4 +1,4 @@
-<section class="p-5" id="testimonials" style="background-color: rgba(218, 235, 243, 1);">
+<section class="p-5" id="testimonials" style="background-color: rgb(193, 211, 243);">
     <h1>Ils m'ont fait confiance</h1>
     <hr class="hr-title">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto unde repellendus quia vitae minus a magnam molestiae distinctio eius! Impedit.</p>
