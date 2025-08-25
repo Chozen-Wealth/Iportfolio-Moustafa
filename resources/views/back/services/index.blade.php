@@ -1,10 +1,9 @@
 @extends("layouts.back")
 
 @section("content")
-    <section id="services" style="">
-        <h1>Services</h1>
+    <section id="services" style="padding: 50px;padding-left: 300px;">
+        <h1>Modifications de la section "Services"</h1>
         <hr class="hr-title">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae aliquam assumenda at voluptate debitis officiis quam accusamus quia alias ab distinctio iure qui hic saepe nostrum sit totam velit, quae eos veritatis. Totam laudantium cupiditate nulla iusto incidunt blanditiis asperiores.</p>
         <div class="grille-services">
             @foreach ($services as $service)
                 <div class="d-flex gap-2">
