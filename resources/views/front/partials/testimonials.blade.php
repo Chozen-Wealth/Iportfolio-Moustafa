@@ -13,7 +13,7 @@
                 <div class="d-block w-100">
                     <div class="d-flex gap-5 p-5">
                         @for ($i = 0; $i <= 1; $i++)
-                            <div class="d-flex flex-column align-items-center ">
+                            <div class="d-flex flex-column align-items-center">
                                 <div class="box-bulle">
                                     <div class="bg-light p-4">
                                         <p class="text-center">
@@ -33,7 +33,7 @@
                                     <div class="bas-bulle mx-auto"></div>
                                 </div>
                                 <div class=" d-flex flex-column align-items-center">
-                                    <img class="rounded-circle" style="height: 100px; width: 100px; " src="{{ $testimonials[$i]->img }}" alt="no img">
+                                    <img class="rounded-circle" style="height: 100px; width: 100px; object-fit: cover; aspect-ratio: 1 / 1" src="{{ $testimonials[$i]->img }}" alt="no img">
                                     <b class="text-center">{{ $testimonials[$i]->name }}</b>
                                     <p class="text-center text-secondary">{{ $testimonials[$i]->position }}</p>
                                 </div>

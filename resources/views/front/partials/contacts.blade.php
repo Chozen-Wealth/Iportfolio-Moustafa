@@ -56,20 +56,20 @@
             <div class="d-flex gap-3">
                 <div class="d-flex flex-column gap-1 w-50">
                     <label for="">Ton Nom</label>
-                    <input class="form-control" type="text" name="nom" id="">
+                    <input required class="form-control" type="text" name="nom" id="">
                 </div>
                 <div class="d-flex flex-column gap-1 w-50">
                     <label for="">Ton Email</label>
-                    <input class="form-control" type="email" name="email" id="">
+                    <input required class="form-control" type="email" name="email" id="">
                 </div>
             </div>
             <div class="d-flex flex-column gap-1">
                 <label for="">Sujet</label>
-                <input class="form-control" type="text" name="sujet" id="">
+                <input required class="form-control" type="text" name="sujet" id="">
             </div>
             <div class="d-flex flex-column gap-1 flex-grow-1 align-items-center">
                 <label class="w-100" for="">Message</label>
-                <textarea class="form-control h-100" name="message" id=""></textarea>
+                <textarea required class="form-control h-100" name="message" id=""></textarea>
                 <button class="btn btn-primary mt-3" type="submit">Envoyer Le Message</button>
             </div>
         </form>

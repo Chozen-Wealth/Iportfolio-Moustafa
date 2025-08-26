@@ -15,7 +15,7 @@
                         </svg>
                         Code
                     </label>
-                    <input type="radio" name="icon" id="code" value="{{ $code }}">
+                    <input checked type="radio" name="icon" id="code" value="{{ $code }}">
                 </div>
                 <div class="d-flex align-items-center gap-1">
                     <label for="design">
@@ -51,10 +51,10 @@
                     <input type="radio" name="icon" id="website" value="{{ $website }}">
                 </div>
             </div>
-            <input class="form-control" type="text" name="title" id="" placeholder="Titre">
-            <input class="form-control" type="text" name="text" id="" placeholder="Texte">
+            <input required class="form-control" type="text" name="title" id="" placeholder="Titre">
+            <input required class="form-control" type="text" name="text" id="" placeholder="Texte">
             <div>
-                <button class="btn btn-secondary" type="submit">Annuler</button>
+                <a class="btn btn-secondary" href="{{ route("index_services") }}">Annuler</a>
                 <button class="btn btn-primary" type="submit">Confirmer</button>
             </div>
         </form>

@@ -152,3 +152,9 @@
     row-gap: 50px;
     padding-right: 50px;
 }
+.icon-social {
+    transition: 0.3s;
+}
+.icon-social:hover {
+    background-color: rgb(17, 141, 224) !important;
+}
