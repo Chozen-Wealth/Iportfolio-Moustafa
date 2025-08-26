@@ -8,7 +8,7 @@
             <div class="d-flex flex-column align-items-center w-50" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);padding:20px; border-radius: 10px;">
                 <div class="box-bulle w-100">
                     <div class="bg-light p-4 rounded-3 w-100">
-                        <input class="w-100" type="text" name="comment" id="" value="{{ old("comment", $testimonial->comment) }}">
+                        <textarea name="comment" style="height: 150px" class="form-control">{{ old('comment', $testimonial->comment) }}</textarea>
                     </div>
                 <div class="bas-bulle mx-auto"></div>
                 </div>

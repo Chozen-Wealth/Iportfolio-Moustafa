@@ -7,7 +7,7 @@
             <div class="d-flex flex-column align-items-center w-50" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);padding:20px; border-radius: 10px;">
                 <h1>Nouveau testimonial</h1>
                 <div class="w-100 mb-3">
-                    <textarea class="form-control" name="comment" id="" placeholder="Commentaire"></textarea>
+                    <textarea class="form-control" style="height: 150px" name="comment" id="" placeholder="Commentaire"></textarea>
                 </div>
                 <div class="d-flex flex-column align-items-center gap-3">
                     <input class="form-control" type="file" name="img" id="">
