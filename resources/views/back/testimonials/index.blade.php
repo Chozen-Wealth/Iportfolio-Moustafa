@@ -27,7 +27,7 @@
                         <div class="bas-bulle mx-auto"></div>
                     </div>
                     <div class=" d-flex flex-column align-items-center">
-                        <img class="rounded-circle" style="height: 100px; width: 100px; " src="{{ asset($testimonial->img) }}" alt="no img">
+                        <img class="rounded-circle" style="height: 100px; width: 100px; object-fit: cover;" src="{{ asset($testimonial->img) }}" alt="no img">
                         <b class="text-center">{{ $testimonial->name }}</b>
                         <p class="text-center text-secondary">{{ $testimonial->position }}</p>
                         <div class="d-flex gap-2">

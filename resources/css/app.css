@@ -81,7 +81,7 @@
     background-color: rgba(52, 136, 255, 1) !important;
 }
 .box-bulle {
-    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.1));
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.2));
 }
 .bulle-contact {
     height: 35px;
@@ -149,5 +149,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
+    row-gap: 50px;
     padding-right: 50px;
 }

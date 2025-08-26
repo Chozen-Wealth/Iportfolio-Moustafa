@@ -46,7 +46,7 @@ Route::delete('/back/services/destroy/{id}', [ServiceController::class, "destroy
 Route::get('/back/testimonials/index', [TestimonialController::class, "index"])->name("index_testimonials");
 Route::get('/back/testimonials/create', [TestimonialController::class, "create"])->name("create_testimonials");
 Route::post('/back/testimonials/store', [TestimonialController::class, "store"])->name("store_testimonials");
-Route::get('/back/testimonials/edit', [TestimonialController::class, "edit"])->name("edit_testimonials");
+Route::get('/back/testimonials/edit/{id}', [TestimonialController::class, "edit"])->name("edit_testimonials");
 Route::put('/back/testimonials/update/{id}', [TestimonialController::class, "update"])->name("update_testimonials");
 Route::delete('/back/testimonials/destroy/{id}', [TestimonialController::class, "destroy"])->name("destroy_testimonials");
 
