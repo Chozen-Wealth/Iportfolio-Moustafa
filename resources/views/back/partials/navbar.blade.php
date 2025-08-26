@@ -58,13 +58,13 @@
             </a>
         </div>
         <div class="itemboxmenu">
-            <a class="text-decoration-none text-light d-flex gap-3 align-items-center" href="#">
+            <a class="text-decoration-none text-light d-flex gap-3 align-items-center" href="{{ route("index_skills") }}">
                 <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
-                fill="rgb(255, 201, 101)" viewBox="0 0 24 24" >
+                fill="#ffffff" viewBox="0 0 24 24" >
                 <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path d="M11 9h2v6h-2zM11 17h2v2h-2z"></path><path d="M12.87 2.51c-.35-.63-1.4-.63-1.75 0l-9.99 18c-.17.31-.17.69.01.99.18.31.51.49.86.49h20c.35 0 .68-.19.86-.49a1 1 0 0 0 .01-.99zM3.7 20 12 5.06 20.3 20z"></path>
+                <path d="M14 2c-.55 0-1 .45-1 1v7c0 .55.45 1 1 1h7c.55 0 1-.45 1-1 0-4.41-3.59-8-8-8m1 7V4.08c2.51.42 4.49 2.41 4.92 4.92z"></path><path d="M10.51 22A8.5 8.5 0 0 0 19 14.06c.02-.28-.08-.55-.27-.75s-.45-.32-.73-.32h-6.99V6a.97.97 0 0 0-.32-.73c-.2-.19-.46-.28-.75-.27-2.06.13-4 1.01-5.45 2.47C2.88 9.08 2 11.22 2 13.49s.89 4.41 2.49 6.02A8.46 8.46 0 0 0 10.51 22M5.91 8.88c.86-.86 1.93-1.45 3.1-1.73v6.83c0 .55.45 1 1 1h6.83a6.4 6.4 0 0 1-1.73 3.1c-1.23 1.23-2.87 1.91-4.6 1.91s-3.37-.68-4.6-1.91S4 15.21 4 13.48s.68-3.38 1.91-4.61Z"></path>
                 </svg>
-                Skills (Maintenance)
+                Edit Skills
             </a>
         </div>
         <div class="itemboxmenu">

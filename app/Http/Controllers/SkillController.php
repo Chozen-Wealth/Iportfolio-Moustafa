@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\Skill;
 use Illuminate\Http\Request;
 
@@ -9,10 +10,12 @@ class SkillController extends Controller
 {
     public function index () {
         $skills = Skill::all();
-        return  view("back.skills.index", compact("skills"));
+        $about = About::first();
+        return  view("back.skills.index", compact("skills", "about"));
     }
     public function create () {
-        return view("back.skills.create");
+        $about = About::first();
+        return view("back.skills.create", compact("about"));
     }
     public function store (Request $request) {
         $skill = new Skill();
@@ -20,14 +23,15 @@ class SkillController extends Controller
         $skill->pourcentage = $request->pourcentage;
         $skill->save();
 
-        return redirect()->route("store_skills");
+        return redirect()->route("index_skills");
     }
     public function edit ($id) {
-        $skill = Skill::where("id", $id)->first();
-        return view("back.skills.edit", compact("skill"));
+        $skill = Skill::findOrFail($id);
+        $about = About::first();
+        return view("back.skills.edit", compact("skill", "about"));
     }
     public function update ($id, Request $request) {
-        $skill = Skill::where("id", $id);
+        $skill = Skill::findOrFail($id);
         $skill->skill = $request->skill;
         $skill->pourcentage = $request->pourcentage;
         $skill->update();

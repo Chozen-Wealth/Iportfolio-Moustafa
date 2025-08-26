@@ -22,7 +22,7 @@ Route::put('/back/about/update/', [AboutController::class, "update"])->name("upd
 Route::get('/back/skills/index', [SkillController::class, "index"])->name("index_skills");
 Route::get('/back/skills/create', [SkillController::class, "create"])->name("create_skills");
 Route::post('/back/skills/store', [SkillController::class, "store"])->name("store_skills");
-Route::get('/back/skills/edit', [SkillController::class, "edit"])->name("edit_skills");
+Route::get('/back/skills/edit/{id}', [SkillController::class, "edit"])->name("edit_skills");
 Route::put('/back/skills/update/{id}', [SkillController::class, "update"])->name("update_skills");
 Route::delete('/back/skills/destroy/{id}', [SkillController::class, "destroy"])->name("destroy_skills");
 
