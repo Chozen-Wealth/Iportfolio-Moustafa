@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 
@@ -9,7 +10,8 @@ class TestimonialController extends Controller
 {
     public function index () {
         $testimonials = Testimonial::all();
-        return  view("back.testimonials.index", compact("testimonials"));
+        $about = About::first();
+        return  view("back.testimonials.index", compact("testimonials", "about"));
     }
     public function create () {
         return view("back.testimonials.create");

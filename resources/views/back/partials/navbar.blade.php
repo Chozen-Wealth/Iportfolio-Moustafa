@@ -68,13 +68,13 @@
             </a>
         </div>
         <div class="itemboxmenu">
-            <a class="text-decoration-none text-light d-flex gap-3 align-items-center" href="#">
+            <a class="text-decoration-none text-light d-flex gap-3 align-items-center" href="{{ route("index_testimonials") }}">
                 <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
-                fill="rgb(255, 201, 101)" viewBox="0 0 24 24" >
+                fill="#ffffff" viewBox="0 0 24 24" >
                 <!--Boxicons v3.0 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                <path d="M11 9h2v6h-2zM11 17h2v2h-2z"></path><path d="M12.87 2.51c-.35-.63-1.4-.63-1.75 0l-9.99 18c-.17.31-.17.69.01.99.18.31.51.49.86.49h20c.35 0 .68-.19.86-.49a1 1 0 0 0 .01-.99zM3.7 20 12 5.06 20.3 20z"></path>
+                <path d="m20,2H4c-1.1,0-2,.9-2,2v12c0,1.1.9,2,2,2h3v2c0,.36.19.69.51.87.15.09.32.13.49.13.18,0,.36-.05.51-.14l4.76-2.86h6.72c1.1,0,2-.9,2-2V4c0-1.1-.9-2-2-2Zm0,14h-7c-.18,0-.36.05-.51.14l-3.49,2.09v-1.23c0-.55-.45-1-1-1h-4V4h16s0,12,0,12Z"></path><path d="M9.33 14 12 12.22 14.67 14 13.78 10.89 16 8.89 13.2 8.67 12 6 10.8 8.67 8 8.89 10.22 10.89 9.33 14z"></path>
                 </svg>
-                Testimonials (Maintenance)
+                Testimonials
             </a>
         </div>
         <div class="itemboxmenu">
